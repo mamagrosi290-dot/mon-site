@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Soundboard</title>
+
+<style>
+body{
+  background:black;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+}
+
+button{
+  margin:10px;
+  padding:20px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>tng.33k 🎵 Soundboard</h1>
+
+<button onclick="new Audio('vine-boom.mp3').play()">Vine Boom</button>
+
+<button onclick="new Audio('bruh.mp3').play()">Bruh</button>
+
+<button onclick="new Audio('airhorn.mp3').play()">Airhorn</button>
+
+<button onclick="new Audio('67.mp3').play()">67</button>
+
+<button onclick="new Audio('fahhh.mp3').play()">Fahhh</button>
+
+<button onclick="new Audio('fart.mp3').play()">Fart</button>
+
+<button onclick="new Audio('aller-ftg.mp3').play()">Aller ftg</button>
+
+<!-- remplacé proprement -->
+<button onclick="new Audio('coucou tv voir ma bite.mp3').play()">Coucou</button>
+
+<h1>crée part tyron</h1>
+
+<div class="like-box">
+  ❤️ Likes : <span id="likeCount">0</span>
+  <button onclick="addLike()">Like</button>
+</div>
+<script>
+let likes = 0;
+
+function addLike(){
+  likes++;
+  document.getElementById("likeCount").innerText = likes;
+}
+</script>
+
+</body>
+</html>
